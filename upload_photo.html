@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: bisque;">
+    
+    <center><h1 style="background-color: #04AA6D; padding : 30px; margin-top: -5px; border-radius: 10px;"><b>Cow Health Diagnosis Form</b></h1></center><br>
+    <form action="/submit_form" method="post" enctype="multipart/form-data">
+        
+        <!-- User Information Section -->
+        <fieldset>
+            <legend><b>     Personal Information</b></legend>
+            <br>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required><br><br>
+            
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="3" required></textarea><br><br>
+        </fieldset>
+        <br>
+        <!-- Cow Details Section -->
+        <fieldset>
+            <legend><b>Cattle Details</b></legend>
+            <br>
+            <label for="cow_name">Cattle Name:</label>
+            <input type="text" id="cow_name" name="cow_name" required><br><br>
+            
+            <label for="cow_age">Cattle Age:</label>
+            <input type="number" id="cow_age" name="cow_age" required><br><br>
+            
+            <label for="breed">Breed:</label>
+            <input type="text" id="breed" name="breed" required><br><br>
+            
+            <label for="sex">Sex:</label>
+            <select id="sex" name="sex" required>
+                <option value="female">Female</option>
+                <option value="male">Male</option>
+            </select><br><br>
+            
+            <label for="weight">Weight (in kg):</label>
+            <input type="number" id="weight" name="weight" required><br><br>
+        </fieldset>
+        <br>
+        <!-- Health Issue Details Section -->
+        <fieldset>
+            <legend><b>Health Issue Details</b></legend>
+            <br>
+            <label for="symptoms">Symptoms Observed:</label>
+            <textarea id="symptoms" name="symptoms" rows="4" required></textarea><br><br>
+            
+            <label for="duration">Duration of Symptoms:</label>
+            <input type="text" id="duration" name="duration" required><br><br>
+            
+            <label for="medications">Medications Administered (if any):</label>
+            <textarea id="medications" name="medications" rows="3"></textarea><br><br>
+            
+            <label for="vet_visited">Veterinarian Visited:</label>
+            <select id="vet_visited" name="vet_visited" required>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select><br><br>
+        </fieldset>
+        <br>
+        <!-- Photo Upload Section -->
+        <fieldset>
+            <legend><b>Upload Photos</b></legend>
+            <br>
+            <label for="photo1">Photo 1:</label>
+            <input type="file" id="photo1" name="photo1" accept="image/*" required><br><br>
+            
+            <label for="photo2">Photo 2:</label>
+            <input type="file" id="photo2" name="photo2" accept="image/*" required><br><br>
+            
+            <label for="photo3">Photo 3:</label>
+            <input type="file" id="photo3" name="photo3" accept="image/*" required><br><br>
+        </fieldset><br><br>
+        
+        <!-- Submit Button -->
+        <center>
+        <input type="button" value="Submit" style = "background-color: #04AA6D;
+            border: none;
+            color: white;
+            padding: 12px 30px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 7px;" >
+
+</center>
+    </form>
+
+</body>
+</html>
