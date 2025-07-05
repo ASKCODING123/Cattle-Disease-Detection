@@ -3,6 +3,7 @@ This project detects the Foot &amp; Mouth Disease in cow, for which we have trai
 We also have the Frontend from where the user can send image as an input, then using the trained models, we predict if the cow has disease or not.
 For integrating ML models with the Frontend, we use Flask API.
 
+
 Frontend : 
 
 ![image](https://github.com/user-attachments/assets/33245133-331c-4df8-a947-b945b2036bca)
@@ -17,13 +18,6 @@ Frontend :
 About Dataset : 
 
 ![image](https://github.com/user-attachments/assets/bae77826-8e62-43be-90c4-2eb4dd627731)
-
-
-Accuracy of ML Models : 
-
-VGG 16 : 
-Inception : 
-Resnet : 
 
 
 Confusion Matrix 
